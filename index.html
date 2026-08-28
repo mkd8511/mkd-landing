@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MKD –Martin Kornberger Dienstleistungen. Transport, Montagen, Demontagen und individuelle Dienstleistungen aus einer Hand." />
+  <title>MKD | Martin Kornberger Dienstleistungen</title>
+  <link rel="icon" href="MKD_Logo_web_512_transparent.png" />
+  <style>
+    :root{--gold:#d8a21a;--gold2:#ffd86a;--ink:#090909;--muted:#a7a7a7;--line:rgba(255,255,255,.1);--card:#111;--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--ink);color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(9,9,9,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand img{width:170px;display:block}.links{display:flex;gap:30px;font-size:14px;color:#ddd}.links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 20px;font-weight:700;font-size:14px}.btn.gold{background:linear-gradient(135deg,#f8cf55,#bd7f05);color:#090909;box-shadow:0 10px 30px rgba(216,162,26,.2)}.btn.ghost{border:1px solid rgba(255,255,255,.18)}
+    .hero{min-height:780px;padding:160px 0 100px;display:grid;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 35%,rgba(216,162,26,.16),transparent 34%),linear-gradient(180deg,#090909,#0c0c0c)}
+    .hero:after{content:"";position:absolute;inset:auto -10% -40%;height:55%;background:radial-gradient(ellipse,rgba(216,162,26,.09),transparent 65%);pointer-events:none}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;position:relative;z-index:1}
+    .eyebrow{color:var(--gold2);letter-spacing:.2em;text-transform:uppercase;font-size:12px;font-weight:800}.hero h1{font-size:clamp(48px,7vw,86px);line-height:.98;margin:18px 0 25px;letter-spacing:-.055em}.hero h1 span{color:var(--gold2)}.hero p{font-size:19px;color:#c4c4c4;max-width:680px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+    .hero-card{border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));box-shadow:0 30px 100px rgba(0,0,0,.4)}.hero-card img{width:100%;max-width:480px;display:block;margin:auto}.badge{display:inline-block;margin-top:25px;padding:8px 12px;border-radius:999px;background:rgba(216,162,26,.1);border:1px solid rgba(216,162,26,.25);color:#f0c84b;font-size:12px}
+    section{padding:105px 0}.section-head{max-width:700px;margin-bottom:45px}.section-head h2{font-size:clamp(34px,4vw,56px);line-height:1.05;margin:12px 0}.section-head p{color:#a9a9a9;font-size:17px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--card);min-height:235px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(216,162,26,.45)}.num{font-size:13px;color:var(--gold2);font-weight:800}.card h3{font-size:23px;margin:40px 0 10px}.card p{color:#999;font-size:14px}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}.visual{min-height:420px;border-radius:30px;background:linear-gradient(135deg,#1b160a,#0d0d0d);border:1px solid rgba(216,162,26,.22);display:grid;place-items:center;position:relative;overflow:hidden}.visual:before{content:"MKD";font-size:180px;font-weight:900;letter-spacing:-.09em;color:rgba(216,162,26,.08)}.visual img{position:absolute;width:65%;max-width:500px}.checklist{display:grid;gap:17px;margin:30px 0}.check{display:flex;gap:14px;align-items:flex-start}.check b{display:block}.check span{color:#9d9d9d;font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--gold);margin-top:8px;box-shadow:0 0 20px rgba(216,162,26,.5)}
+    .cta{border:1px solid rgba(216,162,26,.3);border-radius:30px;padding:55px;background:linear-gradient(120deg,rgba(216,162,26,.14),rgba(255,255,255,.03));display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{margin:0 0 8px;font-size:40px}.cta p{margin:0;color:#aaa}.contact-details{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}.contact-link{color:#fff;font-weight:700}.contact-link:hover{color:var(--gold2)}
+    footer{padding:35px 0;border-top:1px solid var(--line);color:#777;font-size:13px;display:flex;justify-content:space-between;gap:20px}.mobile{display:none}
+    @media(max-width:900px){.links{display:none}.mobile{display:inline-flex}.grid,.split{grid-template-columns:1fr}.hero{min-height:auto;padding-top:135px}.hero-card{order:-1}.cards{grid-template-columns:1fr 1fr}.cta{display:block}.cta .btn{margin-top:25px}}
+    @media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 28px))}nav{height:68px}.brand img{width:145px}.hero h1{font-size:48px}.hero p{font-size:17px}.cards{grid-template-columns:1fr}.card{min-height:auto}.cta{padding:34px}.cta h2{font-size:32px}footer{display:block}footer div+div{margin-top:8px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#top"><img src="MKD_Logo_web_512_transparent.png" alt="MKD – Martin Kornberger Dienstleistungen"></a>
+  <div class="links"><a href="#leistungen">Leistungen</a><a href="#ueber-uns">Über uns</a><a href="#kontakt">Kontakt</a></div>
+  <a class="btn gold mobile" href="#kontakt">Anfragen</a>
+</nav></div></header>
+<main id="top">
+  <section class="hero"><div class="wrap grid">
+    <div><div class="eyebrow">Martin Kornberger Dienstleistungen</div><h1>Stark im Einsatz.<br><span>Sauber umgesetzt.</span></h1><p>Transport, Montagen, Demontagen und individuelle Dienstleistungen – zuverlässig, lösungsorientiert und aus einer Hand.</p><div class="actions"><a class="btn gold" href="#kontakt">Projekt anfragen →</a><a class="btn ghost" href="#leistungen">Leistungen ansehen</a></div></div>
+    <div class="hero-card"><img src="MKD_Logo_web_1024_transparent.png" alt="MKD Firmenlogo"><span class="badge">Persönlich · zuverlässig · flexibel</span></div>
+  </div></section>
+
+  <section id="leistungen"><div class="wrap"><div class="section-head"><div class="eyebrow">Was wir machen</div><h2>Leistung, die anpackt.</h2><p>Ob einzelner Auftrag oder umfassendes Projekt: MKD unterstützt dort, wo praktische Erfahrung, Organisation und zuverlässige Umsetzung gefragt sind.</p></div>
+    <div class="cards">
+      <article class="card"><div class="num">01</div><h3>Transport</h3><p>Sichere, planvolle und flexible Transporte für unterschiedliche Anforderungen.</p></article>
+      <article class="card"><div class="num">02</div><h3>Montagen</h3><p>Präzise Montagearbeiten mit Blick fürs Detail und einen sauberen Abschluss.</p></article>
+      <article class="card"><div class="num">03</div><h3>Demontagen</h3><p>Strukturiert, effizient und mit der nötigen Sorgfalt – auch bei anspruchsvollen Aufgaben.</p></article>
+      <article class="card"><div class="num">04</div><h3>Dienstleistungen</h3><p>Individuelle Unterstützung, wenn eine praktische und unkomplizierte Lösung gefragt ist.</p></article>
+    </div>
+  </div></section>
+
+  <section id="ueber-uns"><div class="wrap split"><div class="visual"><img src="MKD_Logo_web_1024_transparent.png" alt="MKD Logo"></div><div><div class="eyebrow">Warum MKD</div><h2>Ein Ansprechpartner.<br>Viele Möglichkeiten.</h2><div class="checklist"><div class="check"><i class="dot"></i><div><b>Direkte Kommunikation</b><span>Kurze Wege und persönliche Abstimmung statt unnötiger Umwege.</span></div></div><div class="check"><i class="dot"></i><div><b>Flexibel im Einsatz</b><span>Leistungen, die sich an Projekt, Umfang und Situation anpassen.</span></div></div><div class="check"><i class="dot"></i><div><b>Saubere Umsetzung</b><span>Verlässlich geplant und mit einem klaren Anspruch an Qualität.</span></div></div></div></div></div></section>
+
+  <section id="kontakt"><div class="wrap"><div class="cta"><div><div class="eyebrow">Nächster Schritt</div><h2>Sie haben ein Projekt?</h2><p>Erzählen Sie uns kurz, was ansteht. Wir melden uns persönlich bei Ihnen.</p></div><div><div class="contact-details"><a class="contact-link" href="mailto:info@office@martin-kornberger.at">✉ office@martin-kornberger.at</a><a class="contact-link" href="tel:+4367763053096">☎ +43 677 63053096</a></div><a class="btn gold" style="margin-top:18px" href="mailto:info@mkd-dienstleistungen.de">Kontakt aufnehmen →</a></div></div></div></section>
+</main>
+<footer class="wrap"><div>© 2026 MKD – Martin Kornberger Dienstleistungen</div><div><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div></footer>
+</body></html>
